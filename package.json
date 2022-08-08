@@ -1,0 +1,17 @@
+{
+  "name": "mypage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nully0x/mypage.git",
+  "author": "crytochap <olusegunsamson@live.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "edge.js": "^5.3.6",
+    "yarn": "^1.22.19"
+  }
+}

@@ -1,0 +1,46 @@
+@layout('layouts/main') 
+
+@section('header') 
+@!component('components/header')
+@endsection 
+
+@section('main')
+<section>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="title">Contact Us</h1>
+                <form>
+                    <div class="field">
+                        <label for="name" class="label">Name</label>
+                        <p class="control">
+                            <input type="text" class="input" name="name" id="name" placeholder="Name">
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label for="email" class="label">Email</label>
+                        <p class="control">
+                            <input type="email" class="input" name="email" id="email" placeholder="Email">
+                        </p>
+                    </div>
+                    <div class="field">
+                        <label for="message" class="label">Message</label>
+                        <p class="control">
+                            <textarea class="textarea" name="message" id="message" placeholder="Message"></textarea>
+                        </p>
+                    </div>
+                    <div class="field">
+                        <p class="control">
+                            <button type="submit" class="button is-dark">Send</button>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+@endsection 
+
+@section('footer') 
+@!component('components/footer') 
+@endsection
